@@ -20,7 +20,13 @@ st.caption("Audio → Diarization → Transcription → Summary → Bullet Point
 
 # ---------------- HUGGING FACE LOGIN ----------------
 # 🔴 Replace with your token
-login("REMOVED_TOKEN")
+# ---------------- HUGGING FACE LOGIN (SECURE) ----------------
+from dotenv import load_dotenv
+import os
+from huggingface_hub import login
+
+load_dotenv()                     # Load variables from .env
+login(os.getenv("HF_TOKEN"))      # Login using environment variable
 
 # ---------------- AUDIO UPLOAD ----------------
 uploaded_audio = st.file_uploader(

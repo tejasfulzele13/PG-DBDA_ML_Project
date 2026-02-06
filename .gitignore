@@ -24,7 +24,7 @@ env/
 .streamlit/
 
 # -----------------------------
-# Audio files
+# Audio files (DO NOT UPLOAD)
 # -----------------------------
 *.wav
 *.mp3
@@ -39,29 +39,16 @@ uploaded_audio.wav
 torch_cache/
 transformers_cache/
 huggingface/
-hf_cache/
+
+# -----------------------------
+# Environment variables / secrets
+# -----------------------------
+.env
+*.env
 
 # -----------------------------
 # OS-specific files
 # -----------------------------
 .DS_Store
 Thumbs.db
-
-# -----------------------------
-# Environment & secrets
-# -----------------------------
-.env
-*.env
-
-# -----------------------------
-# Logs & temp files
-# -----------------------------
-*.log
-tmp/
-temp/
-
-# -----------------------------
-# Output files (optional)
-# -----------------------------
-outputs/
 

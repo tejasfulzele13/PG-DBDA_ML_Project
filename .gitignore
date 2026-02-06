@@ -52,3 +52,5 @@ huggingface/
 .DS_Store
 Thumbs.db
 
+secrets.txt
+
